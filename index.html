@@ -170,15 +170,24 @@ header p {
 .contact form {
   max-width: 520px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .contact input,
 .contact textarea {
   width: 100%;
   padding: 14px;
-  margin: 10px 0;
   border-radius: 8px;
   border: none;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.contact textarea {
+  resize: vertical;
+  min-height: 120px;
 }
 
 .contact button {
@@ -188,6 +197,13 @@ header p {
   border: none;
   border-radius: 40px;
   font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background: #b08d1c;
+  color: #000;
 }
 
 /* ===== FOOTER ===== */
@@ -236,7 +252,7 @@ footer {
   <div class="services">
 
     <div class="card">
-      <img src="https://provencaleproprete84.wordpress.com/wp-content/uploads/2026/01/whatsapp-image-2026-01-14-at-13.41.55-2.jpeg">
+      <img src="https://provencaleproprete84.wordpress.com/wp-content/uploads/2026/01/whatsapp-image-2026-01-14-at-13.41.55-2.jpeg" alt="Nettoyage intérieur">
       <div class="card-content">
         <h3>Nettoyage intérieur</h3>
         <p>Aspiration complète, sièges, tapis, plastiques, coffres.</p>
@@ -244,7 +260,7 @@ footer {
     </div>
 
     <div class="card">
-      <img src="https://provencaleproprete84.wordpress.com/wp-content/uploads/2026/01/adrian-dascal-ce_gq7z0eac-unsplash-2.jpg">
+      <img src="https://provencaleproprete84.wordpress.com/wp-content/uploads/2026/01/adrian-dascal-ce_gq7z0eac-unsplash-2.jpg" alt="Nettoyage extérieur">
       <div class="card-content">
         <h3>Nettoyage extérieur</h3>
         <p>Lavage carrosserie, jantes, vitres, finitions.</p>
@@ -265,7 +281,7 @@ footer {
   <div class="services">
 
     <div class="card">
-      <img src="https://provencaleproprete84.wordpress.com/wp-content/uploads/2026/01/whatsapp-image-2026-01-14-at-13.42.40-1-1.jpeg">
+      <img src="https://provencaleproprete84.wordpress.com/wp-content/uploads/2026/01/whatsapp-image-2026-01-14-at-13.42.40-1-1.jpeg" alt="Nettoyage Location">
       <div class="card-content">
         <h3>Nettoyage Location</h3>
         <p>Logement complet, désinfection, cuisine & salle de bain.</p>
@@ -273,7 +289,7 @@ footer {
     </div>
 
     <div class="card">
-      <img src="https://provencaleproprete84.wordpress.com/wp-content/uploads/2026/01/adrian-dascal-ce_gq7z0eac-unsplash-2.jpg">
+      <img src="https://provencaleproprete84.wordpress.com/wp-content/uploads/2026/01/adrian-dascal-ce_gq7z0eac-unsplash-2.jpg" alt="Nettoyage Local professionnel">
       <div class="card-content">
         <h3>Nettoyage Local professionnel</h3>
         <p>Bureaux, commerces, sanitaires.</p>
@@ -299,12 +315,11 @@ footer {
   <h2>Contact & devis gratuit</h2>
 
   <form action="https://formspree.io/f/xlgggeoa" method="POST">
-  <input type="text" name="Nom" placeholder="Votre nom" required>
-  <input type="email" name="Email" placeholder="Votre email" required>
-  <textarea name="Message" placeholder="Votre message"></textarea>
-  <button type="submit">Envoyer</button>
-</form>
-
+    <input type="text" name="Nom" placeholder="Votre nom" required>
+    <input type="email" name="email" placeholder="Votre email" required>
+    <textarea name="message" placeholder="Votre message" required></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
 
   <p>📞 07 48 14 80 90</p>
 </section>
