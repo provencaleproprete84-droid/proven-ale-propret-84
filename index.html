@@ -9,8 +9,8 @@
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
-  background: #F4F8FC;
-  color: #2B2B2B;
+  background: #000000; /* fond noir */
+  color: #FFFFFF;      /* texte blanc pour le corps */
   line-height: 1.6;
   padding-top: 90px;
 }
@@ -20,8 +20,8 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #FFFFF;
-  box-shadow: 0 2px 12px rgba(10,77,163,0.12);
+  background: #000000; /* bandeau noir */
+  box-shadow: 0 2px 12px rgba(255,255,255,0.12); /* légère ombre blanche */
   z-index: 999;
 }
 
@@ -42,12 +42,12 @@ body {
 nav a {
   margin: 0 14px;
   text-decoration: none;
-  color: #0A4DA3;
+  color: #FFFFFF; /* liens blancs dans le bandeau noir */
   font-weight: 600;
 }
 
 nav a:hover {
-  color: #1E88E5;
+  color: #1E88E5; /* bleu clair au survol */
 }
 
 /* ===== HEADER ===== */
@@ -93,6 +93,7 @@ header p {
   background: #FFFFFF;
   margin-bottom: 24px;
   border-radius: 14px;
+  color: #2B2B2B;
 }
 
 .section h2 {
@@ -121,6 +122,7 @@ header p {
   background: #FFFFFF;
   border: 1px solid #E1E7EF;
   box-shadow: 0 8px 22px rgba(10,77,163,0.08);
+  color: #2B2B2B;
 }
 
 .card img {
@@ -330,5 +332,3 @@ footer {
 
 </body>
 </html>
-
-
